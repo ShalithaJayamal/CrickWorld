@@ -1,6 +1,12 @@
 import React from 'react';
-import {Layout} from 'antd';
+import { Layout, Avatar} from 'antd';
+import { Typography } from 'antd';
 import './App.css';
+
+
+import { UserOutlined } from '@ant-design/icons';
+
+const { Title } = Typography;
 
 const {Header,Footer,Sider,Content } = Layout;
 
@@ -8,15 +14,22 @@ function App() {
   return (
     <div className="App">
     
+<Layout>
 
+
+<Header style = {{padding :15}} >
+<Avatar style = {{float :'right'}} size={32} icon={<UserOutlined />} />
+<Title style = {{color:'white'}} level={2} >Shalith Jayamal</Title>
+</Header>
+</Layout>
     <Layout>
-      <Header>Header</Header>
+      <Sider  style={{background:'red'}}>Sider</Sider>
       <Layout>
-        <Sider>Sider</Sider>
-        <Content>Content</Content>
+      <Content>Content</Content>
+        <Footer>Footer</Footer>
       </Layout>
-      <Footer>Footer</Footer>
-    </Layout>
+      </Layout>
+  
 
     
     
