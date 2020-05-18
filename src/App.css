@@ -3,6 +3,11 @@
   text-align: center;
 }
 
+.Sha
+{
+  font-size: 30px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
